@@ -1,0 +1,76 @@
+.product-form h3 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.product-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form input[type="url"] {
+  padding: 8px 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.product-form__check {
+  flex-direction: row;
+  align-items: center;
+}
+
+.product-form__check input {
+  width: auto;
+  margin-right: 8px;
+}
+
+.product-form__images {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.product-form__images input {
+  padding: 8px 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.product-form__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.product-form__actions button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.product-form__actions button[type="submit"] {
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+  border: none;
+}
+
+.product-form__actions button[type="button"] {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.product-form__actions button[type="button"]:hover {
+  color: var(--text-light);
+}

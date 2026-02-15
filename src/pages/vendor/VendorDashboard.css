@@ -1,0 +1,45 @@
+.vendor-dashboard__tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.vendor-dashboard__tab {
+  padding: 10px 20px;
+  background: var(--card-bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+}
+
+.vendor-dashboard__tab:hover {
+  color: var(--text-light);
+  border-color: var(--accent-gold);
+}
+
+.vendor-dashboard__tab--active {
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+  border-color: var(--accent-gold);
+}
+
+.vendor-dashboard__badge {
+  margin-left: 8px;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.vendor-dashboard__tab--active .vendor-dashboard__badge {
+  background: var(--bg-dark);
+  color: var(--accent-gold);
+}
+
+.vendor-dashboard__tab i {
+  margin-right: 8px;
+}

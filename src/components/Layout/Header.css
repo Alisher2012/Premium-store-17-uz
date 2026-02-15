@@ -1,0 +1,142 @@
+.header {
+  background: var(--bg-red);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(201, 162, 39, 0.08) 0%, transparent 50%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      var(--bg-red-pattern) 2px,
+      var(--bg-red-pattern) 4px
+    );
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Logo: icon + text in one line */
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--accent-gold);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.header__logo-icon {
+  font-size: 1.5rem;
+  opacity: 0.95;
+}
+
+.header__logo-text {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.header__logo-premium {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.header__logo-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.header__logo-est {
+  font-size: 0.6rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.15em;
+  opacity: 0.9;
+  margin-left: 4px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.header__nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.header__nav-link:hover {
+  color: var(--accent-gold);
+  background: rgba(201, 162, 39, 0.15);
+  text-decoration: none;
+}
+
+.header__nav-link i {
+  font-size: 1rem;
+}
+
+.header__cart-link {
+  position: relative;
+}
+
+.header__cart-badge {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+  font-size: 0.65rem;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.header__vendor-link {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .header__inner {
+    flex-direction: column;
+  }
+
+  .header__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__nav-link span {
+    display: none;
+  }
+
+  .header__nav-link i {
+    font-size: 1.2rem;
+  }
+}

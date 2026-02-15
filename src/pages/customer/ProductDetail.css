@@ -1,0 +1,158 @@
+.product-detail--missing {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.product-detail__back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+}
+
+.product-detail__back:hover {
+  color: var(--accent-gold);
+}
+
+.product-detail__back i {
+  margin-right: 6px;
+}
+
+.product-detail__delivery i,
+.product-detail__meta i {
+  margin-right: 4px;
+}
+
+.product-detail__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.product-detail__gallery {
+  position: sticky;
+  top: 100px;
+}
+
+.product-detail__main {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-image-bg);
+  margin-bottom: 12px;
+}
+
+.product-detail__main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-detail__thumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.product-detail__thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  padding: 0;
+  background: var(--card-bg);
+  cursor: pointer;
+}
+
+.product-detail__thumb--active {
+  border-color: var(--accent-gold);
+}
+
+.product-detail__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-detail__info {
+  background: var(--card-info-bg);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.product-detail__title {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.product-detail__brand {
+  margin: 0 0 12px;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.product-detail__price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin: 0 0 8px;
+}
+
+.product-detail__meta,
+.product-detail__delivery,
+.product-detail__admin {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.product-detail__actions {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-detail__qty {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-detail__qty label {
+  font-size: 0.95rem;
+}
+
+.product-detail__qty input {
+  width: 80px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.product-detail__add {
+  padding: 14px 24px;
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product-detail__add:hover {
+  background: var(--accent-gold-light);
+}
+
+@media (max-width: 768px) {
+  .product-detail__content {
+    grid-template-columns: 1fr;
+  }
+  .product-detail__gallery {
+    position: static;
+  }
+}

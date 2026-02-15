@@ -1,0 +1,40 @@
+.catalog__title {
+  margin: 0 0 20px;
+  font-size: 1.75rem;
+}
+
+.catalog__toolbar {
+  margin-bottom: 24px;
+}
+
+.catalog__search {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-light);
+}
+
+.catalog__search::placeholder {
+  color: var(--text-muted);
+}
+
+.catalog__search:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.catalog__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-muted);
+  padding: 48px 24px;
+}

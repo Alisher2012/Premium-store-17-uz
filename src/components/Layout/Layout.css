@@ -1,0 +1,37 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 24px 20px 40px;
+}
+
+.layout__footer {
+  background: var(--bg-red-pattern);
+  padding: 16px 20px;
+  margin-top: auto;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.layout__footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.layout__footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
